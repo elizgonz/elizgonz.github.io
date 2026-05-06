@@ -122,3 +122,61 @@ body {
     background: black;
     color: white;
 }
+
+/* Gallery container */
+.gallery {
+    column-count: 3;        /* number of columns */
+    column-gap: 15px;
+}
+
+/* Each item */
+.gallery-item {
+    position: relative;
+    margin-bottom: 15px;
+    break-inside: avoid;    /* prevents awkward splits */
+}
+
+/* Images */
+.gallery-item img {
+    width: 100%;
+    display: block;
+    border-radius: 6px;
+}
+
+/* Overlay (hidden by default) */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.5); /* gray overlay */
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 10px;
+}
+
+/* Hover effect */
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+@media (max-width: 900px) {
+    .gallery {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 500px) {
+    .gallery {
+        column-count: 1;
+    }
+}
