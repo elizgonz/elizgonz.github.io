@@ -61,6 +61,28 @@ body {
     border: none;
 }
 
+/* Icon row */
+.icon-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;          /* spacing between icons */
+    margin-top: 15px;
+}
+
+/* Icons */
+.icon-row img {
+    width: 22px;        /* reduced from ~28px */
+    height: 22px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+/* Hover (optional but nice) */
+.icon-row img:hover {
+    transform: scale(1.15);
+}
+
 /* Main content */
 .main {
     margin-left: 320px;
@@ -70,9 +92,8 @@ body {
 
 /* Navbar container */
 .navbar {
-    background: #6fa8dc;     /* light blue */
-    padding: 12px 15px;
-    border-radius: 8px;
+    background: none;        /* remove blue */
+    padding: 12px 0;
     margin-bottom: 20px;
 }
 
@@ -82,15 +103,14 @@ body {
     margin-right: 12px;
     padding: 6px 12px;
     text-decoration: none;
-    color: white;
-    border: 2px solid white;   /* white frame */
+    color: black;            /* back to black text */
+    border: 2px solid black; /* black frame */
     border-radius: 6px;
-    font-weight: normal;
     transition: all 0.2s ease;
 }
 
-/* Hover effect */
+/* Hover */
 .navbar a:hover {
-    background: white;
-    color: #0a2a66;  /* matches your sidebar blue */
+    background: black;
+    color: white;
 }
