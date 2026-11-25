@@ -44,19 +44,46 @@
     <p>I am primarily interested in understanding stellar spectroscopic variability and 
         its impact on radial velocity measurements, specifically the Rossiter-McLaughlin effect.</p>
 
-    <h3>Shadowing the Sun: Testing Synthetic Granulation Spectra with Solar Eclipse Observations</h3>
+    <h3>Radial Velocity Constraints of Europa's Opposition Surge during the 2026 January 10 Earth Transit</h3>
     <p>
-        Observations of the Rossiter-McLaughlin (RM) effect during a solar eclipse, with a peak-to-peak amplitude of ~1.4 km/s, 
-        are a rigorous test of granulation and convective blueshift in the solar spectrum. Using NEID and EXPRES solar feed data of
-        the October 2023 solar eclipse and GRASS-E (a geometry-modified version of GRASS), we compare the observed RVs for 
-        22 lines with the simulated RVs from the synthetic granulation-driven spectra. Residuals of the GRASS-E Fe I 5434 Å model 
-        show an RMS of 11.8 m/s over the RM signal (~0.8%), a level of accuracy well beyond the reach of 
-        current exoplanet transit observations. However, although a promising tool for modeling granulation variability during a solar eclipse, 
-        GRASS-E is potentially limited by sparse center-to-limb sampling. We find a simple model with an optimized convective 
-        blueshift polynomial for Fe I 5434 Å to outperform GRASS-E with an RMS of 6.7 m/s. 
+        At opposition, Solar System objects with visible surfaces have a surge in brightness known as the opposition surge effect, 
+        which provides a unique opportunity to probe regolith and atmospheric properties. Here we present radial velocity (RV)
+        observations of Europa, while the Earth transits the Sun from Europa's perspective, that are impacted by the opposition 
+        surge effect, resulting in a RV curve perturbation that is inverted, longer and orders of magnitudes larger than predicted
+         by an RV model that only considers the portion of the Sun blocked by the Earth. We observed Europa with the NEID and 
+         Habitable Zone Planet Finder spectrographs surrounding the 2026 January 10 Earth transit as seen from Europa. To model 
+         the opposition surge effect on these RV observations, we develop the first RV model that integrates prescriptions for 
+         both physical mechanisms that can dominate the surge: shadow hiding (SH) and coherent backscattering (CB). We use the 
+         observed Europa RVs and our model to constrain Europa's opposition surge at near-zero phase angles and to test whether 
+         wavelength-dependent RVs can distinguish whether SH or CB dominates for Europa. Due to degeneracies in the obtained data,
+          we are unable to definitively discriminate the dominant mechanism of Europa's opposition surge. Yet, this work 
+          establishes a modeling framework and demonstrates the potential of high-precision RVs during Solar System transits to 
+          characterize the opposition surge effect at near-zero phase angles. 
     <p>
     <p>
-        The GRASS-E software can be found as a Julia submodule on the <a href="https://github.com/palumbom/GRASS" target="_blank">GRASS GitHub</a>. 
+        Published manuscript can be found <a href="https://iopscience.iop.org/article/10.3847/1538-4357/aebc82" target="_blank">here</a>. The GRASS-E software can be found as a Julia submodule on the <a href="https://github.com/palumbom/GRASS" target="_blank">GRASS GitHub</a>. 
+        The NEID analysis can also be found on <a href="https://github.com/elizabethg60/NEIDEclipse" target="_blank">GitHub</a>.
+    </p>
+
+    <h3>Shadowing the Sun. I. Testing Synthetic Granulation Spectra with NEID Solar Eclipse Observations</h3>
+    <p>
+        The subtle Doppler radial velocity (RV) signature of an Earth-mass exoplanet in the Habitable Zone around 
+        a nearby Sun-like star is difficult to detect due to stellar variability. While multiple techniques aim to 
+        mitigate rotationally-modulated stellar activity, granulation, introducing 0.1-1 m/s RV shifts, currently sets 
+        the floor for detecting Earth-mass RV signals for low-activity stars. Observations of the Rossiter-McLaughlin (RM) 
+        effect during a solar eclipse, with a peak-to-trough amplitude of ~1.4 km/s, are a rigorous test of granulation 
+        and convective blueshift in the solar spectrum. Using NEID solar feed data of the October 2023 solar eclipse and 
+        GRASS-E (a geometry-modified version of GRASS), we compare the observed RVs for 22 lines with the simulated 
+        RVs from the synthetic granulation-driven spectra. Residuals of the GRASS-E Fe I 5434 Å model show an RMS of 13.47 m/s 
+        over the RM signal. We find that a model with an optimized convective blueshift polynomial for Fe I 5434 Å significantly 
+        outperforms GRASS-E with an RMS of only 2.90 m/s, suggesting that GRASS-E is currently limited by sparse center-to-limb 
+        observations. By combining a set of spectral lines, we achieve a weighted RMS of 5.2 m/s over the RM signal (~0.37%), 
+        a level of accuracy well beyond the reach of current exoplanet transit observations. In all, we demonstrate that solar 
+        eclipse observations allow us to recover the center-to-limb variation of the convective blueshift for individual spectral 
+        lines. 
+    <p>
+    <p>
+        Published manuscript can be found <a href="https://iopscience.iop.org/article/10.3847/1538-4357/aebc82" target="_blank">here</a>. The GRASS-E software can be found as a Julia submodule on the <a href="https://github.com/palumbom/GRASS" target="_blank">GRASS GitHub</a>. 
         The NEID analysis can also be found on <a href="https://github.com/elizabethg60/NEIDEclipse" target="_blank">GitHub</a>.
     </p>
 </div>
